@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="url" id="inp">
+    <button id="bt"></button>
+
+    <script>
+        bt.AddEventListener('click', async e => {
+            await fetch(inp.value)
+            .then((resp) => text())
+            .then(function(data){
+                inp.value = data.value
+            })
+        });
+    </script>
+</body>
+</html>
