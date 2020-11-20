@@ -11,13 +11,13 @@
     <button id="bt"></button>
 
     <script>
-        bt.AddEventListener('click', async () => {
-            await fetch(inp.value)
+        bt.AddEventListener('click', () => {
+            fetch(inp.value)
             .then((resp) => text())
             .then(function(data){
                 inp.value = data
             })
-        });
+        })
     </script>
 </body>
 </html>
