@@ -16,6 +16,9 @@
             .then((resp) => text())
             .then(function(data){
                 inp.value = data
+            })
+            .catch(reject => {
+                console.log(reject);
             });
         })
     </script>
