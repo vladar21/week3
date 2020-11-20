@@ -8,7 +8,7 @@
 <body>
 
     <input type="text" id="inp">
-    <button id="bt"></button>
+    <button id="bt">Click</button>
 
     <script>
         bt.AddEventListener('click', () => {
@@ -16,7 +16,7 @@
             .then((resp) => text())
             .then(function(data){
                 inp.value = data
-            })
+            });
         })
     </script>
 </body>
