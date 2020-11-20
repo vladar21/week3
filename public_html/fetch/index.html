@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fetch</title>
 </head>
 <body>
 
-    <input type="url" id="inp">
+    <input type="text" id="inp">
     <button id="bt"></button>
 
     <script>
-        bt.AddEventListener('click', async e => {
+        bt.AddEventListener('click', async () => {
             await fetch(inp.value)
             .then((resp) => text())
             .then(function(data){
-                inp.value = data.value
+                inp.value = data
             })
         });
     </script>
