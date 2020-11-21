@@ -18,8 +18,7 @@
       "Content-Type": "text/plain; charset=UTF-8"
     },
     "/fetch/": {
-      "Access-Control-Allow-Origin": "*",
-      "Content-Type": "application/x-www-form-urlencoded"
+      "Access-Control-Allow-Origin": "*"
     }
   }
 }
