@@ -6,16 +6,16 @@
       "Access-Control-Allow-Origin": "*"      
     },
     "/login/": {
-      "Content-Type": "text/plain; charset=UTF-8",
-      "Access-Control-Allow-Origin": "*"
+      "Access-Control-Allow-Origin": "*",
+      "Content-Type": "text/plain; charset=UTF-8"
     },
     "/sample/": {
-      "Content-Type": "text/plain; charset=UTF-8",
-      "Access-Control-Allow-Origin": "*"
+      "Access-Control-Allow-Origin": "*",
+      "Content-Type": "text/plain; charset=UTF-8"
     },
     "/promise/": {
-      "Content-Type": "text/plain; charset=UTF-8",
-      "Access-Control-Allow-Origin": "*"
+      "Access-Control-Allow-Origin": "*",
+      "Content-Type": "text/plain; charset=UTF-8"
     },
     "/fetch/": {
       "Access-Control-Allow-Origin": "*"
