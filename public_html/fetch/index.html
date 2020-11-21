@@ -15,10 +15,10 @@
         btn.addEventListener('click', doButtonClick);
 
         async function doButtonClick(){
-            await fetch(inp.value, {
-            method: "GET"            
-            })
-            .then((response) => text())
+            await fetch(inp.value)
+            .then((response) => {
+                    return response.text();
+                })
             .then((data) => {
                 inp.value = data;
             })
