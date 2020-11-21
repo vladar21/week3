@@ -14,13 +14,13 @@
         bt.AddEventListener('click', () => {
             fetch(inp.value)
             .then((resp) => text())
-            .then(function(data){
+            .then((data) => {
                 inp.value = data
             })
             .catch(reject => {
                 console.log(reject);
             });
-        })
+        });
     </script>
 </body>
 </html>
