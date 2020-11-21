@@ -11,7 +11,9 @@
     <button id="bt">Click</button>
 
     <script>
-        bt.addEventListener('click', async () => {
+        bt.addEventListener('click', doButtonClick);
+
+        async function doButtonClick(){
             await fetch(inp.value)
                 .then((response) => text())
                 .then((data) => {
@@ -20,7 +22,7 @@
                 .catch((reject) => {
                     console.log(reject);
                 });
-        });
+        }
 
     </script>
 </body>
