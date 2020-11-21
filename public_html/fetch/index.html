@@ -11,17 +11,18 @@
     <button id="bt">Click</button>
 
     <script>
-        bt.addEventListener('click', doButtonClick);
+        const btn = document.getElementById('bt');
+        btn.addEventListener('click', doButtonClick);
 
         async function doButtonClick(){
             await fetch(inp.value)
-                .then((response) => text())
-                .then((data) => {
-                    inp.value = data;
-                })
-                .catch((reject) => {
-                    console.log(reject);
-                });
+            .then((response) => text())
+            .then((data) => {
+                inp.value = data;
+            })
+            .catch((reject) => {
+                console.log(reject);
+            });
         }
 
     </script>
