@@ -11,16 +11,17 @@
     <button id="bt">Click</button>
 
     <script>
-        bt.AddEventListener('click', () => {
+        bt.addEventListener('click', () => {
             fetch(inp.value)
-            .then((response) => text())
-            .then((data) => {
-                inp.value = data
-            })
-            .catch(e => {
-                console.log(e);
-            });
+                .then((response) => text())
+                .then((data) => {
+                    inp.value = data;
+                })
+                .catch((reject) => {
+                    console.log(reject);
+                });
         });
+
     </script>
 </body>
 </html>
