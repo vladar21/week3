@@ -1,4 +1,5 @@
-function task(x){ 
-  return new Promise((res, rej) => x < 18 ? res('Yes') : rej('no'))
-             .catch(rej => { console.log(rej); });
+function task(x){
+  const pr = new Promise((res, rej) => x < 18 ? res('Yes') : rej('no'));
+  pr.catch(rej => console.log(rej));
+  return pr;
 }
