@@ -11,8 +11,8 @@
     <button id="bt">Click</button>
 
     <script>
-        bt.addEventListener('click', () => {
-            fetch(inp.value)
+        bt.addEventListener('click', async () => {
+            await fetch(inp.value)
                 .then((response) => text())
                 .then((data) => {
                     inp.value = data;
